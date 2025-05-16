@@ -14,7 +14,7 @@ const Home = () => {
 	return (
 		<>
 			<NavbarComponent items={navbarItems} brandText='Start Boostrap' />
-			<div className="mx-5 px-4 px-md-5 my-5">
+			<div className="px-4 px-md-5 my-5">
 				<HeroComponent
 					title='A Warm Welcome!'
 					textBody="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam commodi tenetur labore, placeat quae dolore, ea temporibus est incidunt repudiandae minus delectus laudantium repellat dolor dolores sit atque consequatur in?"
