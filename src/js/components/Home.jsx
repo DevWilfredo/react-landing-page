@@ -1,6 +1,6 @@
 import HeroComponent from "./HeroComponent";
 import NavbarComponent from "./NavbarComponent";
-
+import CardComponent from "./CardComponent";
 
 const navbarItems = [
 	{ link: '#', text: 'Home' },
