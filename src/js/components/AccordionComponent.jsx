@@ -1,30 +1,30 @@
-const AccordionComponent = ({items, index}) => {
+const AccordionComponent = ({ items, index }) => {
   return (
-    <div class="accordion accordion-flush" id={`accordion-${index}`}>
+    <div className="accordion accordion-flush" id={`accordion-${index}`}>
       {items.map((item, idx) => (
-      <div class="accordion-item" key={idx}>
-        <h2 class="accordion-header">
+        <div className="accordion-item" key={idx}>
+          <h2 className="accordion-header">
 
-          <button 
-          class="accordion-button collapsed" 
-          type="button" 
-          data-bs-toggle="collapse" 
-          data-bs-target={`#collapse-${index}-${idx}`}
+            <button
+              className="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target={`#collapse-${index}-${idx}`}
+            >
+              {item.title}
+            </button>
+
+          </h2>
+
+          <div
+            id={`collapse-${index}-${idx}`}
+            className="accordion-collapse collapse"
+            data-bs-parent={`#accordion-${index}`}
           >
-          {item.title}
-          </button>
-
-        </h2>
-
-        <div 
-        id={`collapse-${index}-${idx}`} 
-        class="accordion-collapse collapse" 
-        data-bs-parent={`#accordion-${index}`}
-        >
-          <div class="accordion-body">{item.content}</div>
+            <div className="accordion-body">{item.content}</div>
+          </div>
         </div>
-      </div>
-    ))}
+      ))}
     </div>
   );
 };

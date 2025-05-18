@@ -12,8 +12,8 @@ const NavbarComponent = ({ items, brandText }) => {
 
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-                        {items.map((item) => (
-                            <li className="nav-item">
+                        {items.map((item, index) => (
+                            <li className="nav-item" key={index}>
                                 <a className="nav-link" aria-current="page" href={item.link}>{item.text}</a>
                             </li>
                         ))}
