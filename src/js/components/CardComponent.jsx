@@ -1,6 +1,7 @@
 export const CardComponent = ({ card }) => {
   
   return (
+    
     <div className="col-md-3 col-sm-6">
 
       <div class="card">
